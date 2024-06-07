@@ -1,9 +1,15 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #E38B28;
   background-image: url('Imagenes/5397533.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   color: #333;
+}
+
+.menu-button {
+  display: block;
+  margin-bottom: 10px;
 }
 
 .button {
@@ -16,18 +22,11 @@ body {
   margin: 10px;
   border: 2px solid #000;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .button:hover {
   background-color: #f7cf23;
-}
-
-.button.with-background {
-  background-color: #fff;
-}
-
-.button.with-outline {
-  border-color: #f7e923;
 }
 
 section {
@@ -41,6 +40,7 @@ article img {
   margin-left: 20px;
 }
 
+/* Estilos para las imágenes específicas */
 img[src="https://cdn.unenvironment.org/2022-05/shutterstock_708300100.jpg"] {
   max-width: 100%;
   height: auto;
@@ -85,7 +85,7 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
+  display: inline; /* Cambiado de inline-block a inline */
   margin-right: 20px;
 }
 
@@ -130,6 +130,7 @@ form label {
   margin-bottom: 5px;
 }
 
+/* Estilos para los elementos de formulario */
 form input[type="text"],
 form input[type="email"],
 form input[type="number"],
@@ -142,6 +143,7 @@ form select {
   border-radius: 5px;
 }
 
+/* Estilos para el botón de envío del formulario */
 form input[type="submit"] {
   width: 100%;
   padding: 10px;
@@ -166,6 +168,7 @@ footer a {
   color: #333;
 }
 
+/* Estilos para los enlaces dentro de párrafos */
 p a.button-link {
   display: inline-block;
   padding: 10px 20px;
